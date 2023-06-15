@@ -144,6 +144,98 @@ print('Unit Consumed : $units');
 print('Amount Charges @Rs. 2.00 Per Unit : $billAmount');
 print('Net Bill Amount : $billAmount');
 
+// Q8: Create a marksheet using operators of at least 5 subjects and output should have Student Name, Student Roll Number, Class, Percentage, Grade Obtained etc.
+
+String fullname = "Mubbashir Ghulam Rasool"; 
+String className = "BSc";
+int roolNumber = 190721;
+
+//Marks Sheet
+double maths = 95;
+double english = 92;
+double islamiyat = 96;
+double computer = 98;
+double physics = 99;
+
+num obtainMarks = maths + english + islamiyat + computer + physics;
+
+int total = 500; 
+
+num result =  (obtainMarks/total) * 100;
+//num result = 80;
+
+print('Name: $fullname           Class: $className          Roll Number: $roolNumber');
+print('\n');
+print('Subject              Marks   Passing   Obtain Marks\n');
+print('Maths                100     40        $maths');
+print('English              100     40        $english');
+print('Islamiyat            100     40        $islamiyat');
+print('Computer             100     40        $computer');
+print('Physics              100     40        $physics');
+print('\n');
+print('Total Marks          500               $obtainMarks');
+print('\n');
+
+
+String number = result.toStringAsFixed(2); 
+print('Percentage $number');
+
+
+if(result >= 80)
+{
+print('Grade A+');
+}
+else if(result < 80 && result >= 70)
+{
+print('Grade A');
+}
+else if(result < 70 && result >= 60)
+{
+print('Grade B');
+}
+else if(result < 60 && result >= 50)
+{
+print('Grade C');
+}
+else if(result < 50 && result >= 40)
+{
+print('Grade D');
+}
+else
+{
+print('Grade Fail');
+}
+
+
+// Q9: Check if the number is even or odd, If number is even then check if this is divisible by 5 or not & if number is odd then check if this is divisible by 7 or not.
+
+int evenOdd = 9;
+
+if(evenOdd%2== 0)
+{
+print('$evenOdd Is Even Number');
+
+if(evenOdd%5== 0){
+print('The number is even and divisible by 5.');
+}
+else
+{
+print('The number is even but not divisible by 5.');
+}
+
+}
+else
+{
+print('$evenOdd Is Odd Number');
+
+if(evenOdd%7== 0){
+print('The number is odd and divisible by 7.');
+}
+else
+{
+print('The number is odd but not divisible by 7.');
+}
+}
 
 
 
